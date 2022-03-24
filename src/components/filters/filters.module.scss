@@ -1,0 +1,77 @@
+@import '../../variables';
+
+.filters {
+  width: 232px;
+  margin-right: 20px;
+  background-color: white;
+  padding: 20px 0 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  &Title {
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}
+
+.checkboxList {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  &Item {
+    & :global span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      color: #4a4a4a;
+    }
+
+    & :global .ant-checkbox {
+      top: auto;
+    }
+
+    & :global .ant-checkbox-input {
+      cursor: $custom-cursor;
+    }
+
+    & :global .ant-checkbox-inner {
+      width: 20px;
+      height: 20px;
+    }
+
+    & :global .ant-checkbox-wrapper {
+      margin-left: 20px;
+      padding: 10px 0;
+      align-items: center;
+      cursor: $custom-cursor;
+      width: 100%;
+    }
+
+    & :global .ant-checkbox-checked .ant-checkbox-inner:after {
+      border-color: #2196f3;
+      transform: rotate(45deg) scale(1) translate(-50%, -60%);
+    }
+
+    & :global .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: white;
+      border-color: #2196f3;
+    }
+
+    &:hover {
+      background-color: #f1fcff;
+    }
+  }
+}

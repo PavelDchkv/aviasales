@@ -1,0 +1,32 @@
+.app {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.header {
+  margin: 0 auto 30px auto;
+
+  &Logo {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.ticketsWrapper {
+  width: 502px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.test {
+  color: tomato;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+}
