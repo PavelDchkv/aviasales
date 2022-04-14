@@ -2,7 +2,7 @@ import React from 'react';
 import { Radio } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { setTab } from '../../actions';
+import { setTab } from '../../store/actions';
 
 import classes from './tabs.module.scss';
 

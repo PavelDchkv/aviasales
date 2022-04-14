@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import Ticket from '../ticket';
 import Spinner from '../spinner';
-import { getNewTickets } from '../../actions';
+import { getNewTickets } from '../../store/actions';
 
 import classes from './tickets-list.module.scss';
 import { generateId, filterTicketsList, sortTicketList } from './functions';
@@ -25,7 +25,7 @@ const TicketsList = () => {
   const ticketsList = ticketsArr.length ? (
     <React.Fragment>
       <ul className={classes.ticketList}>{ticketsArr}</ul>
-      <button className={classes.button} onClick={() => dispatch(getNewTickets(5))}>
+      <button className={classes.button} type="button" onClick={() => dispatch(getNewTickets(5))}>
         <span>Показать еще 5 билетов</span>
       </button>
     </React.Fragment>

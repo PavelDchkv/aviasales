@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { getSearchId, getTickets } from '../../actions';
+import { getSearchId, getTickets } from '../../store/actions';
 import Filters from '../filters';
 import Tabs from '../tabs';
 import TicketsList from '../tickets-list';
